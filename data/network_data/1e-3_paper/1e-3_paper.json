@@ -1,0 +1,45 @@
+{
+  "Network": {
+    "Nr_compare_patches": 50,
+    "Patch_database_batch_size": 500,
+    "loss_function": "CrossEntropyLoss",
+    "model_name": "Network",
+    "nr_voxels_per_dim": 21,
+    "num_epochs": 13,
+    "optimiser": "Adam",
+    "optimiser_params": {
+      "lr": 0.0001
+    },
+    "relation_accept_threshold": 0.5,
+    "seed": 1,
+    "total_dataset_number": 2,
+    "weight_ratio": 8
+  },
+  "Training_Dataset_1": {
+    "augmentation_applied": null,
+    "batch_size": 1,
+    "name": "1e-3_polyhedra_train_500",
+    "path": "data/input_data/1e-3_polyhedra_train_500",
+    "seed": 1,
+    "size": 500
+  },
+  "Training_Dataset_2": {
+    "augmentation_applied": null,
+    "batch_size": 1,
+    "name": "1e-3_polyhedra_validate_50",
+    "path": "data/input_data/1e-3_polyhedra_validate_50",
+    "seed": 7,
+    "size": 50
+  },
+  "cfg_path": "data/network_data/1e-3_paper/1e-3_paper_config.json",
+  "display_stats_freq": 50,
+  "experiment_name": "1e-3_paper",
+  "input_data_path": "data/input_data/",
+  "network_output_path": "data/network_data/1e-3_paper",
+  "network_save_freq": 500,
+  "output_data_path": "data/output_data/1e-3_paper",
+  "preprocessed_patches_path": "data/input_data/1e-3_polyhedra_train_500/Preprocessed_patches",
+  "test_path": "data/output_data/1e-3_paper/Test_Results",
+  "tf_logs_path": "data/tensor_board_logs/1e-3_paper",
+  "trained_model_name": "trained_model.pth"
+}

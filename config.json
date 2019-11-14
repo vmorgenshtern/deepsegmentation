@@ -1,0 +1,14 @@
+{
+  "Network": {
+    "num_epochs": 1,
+    "seed": 1,
+    "total_dataset_number": 0
+  },
+  "display_stats_freq": 50,
+  "input_data_path": "data/input_data/",
+  "network_output_path": "data/network_data/",
+  "network_save_freq": 500,
+  "output_data_path": "data/output_data/",
+  "trained_model_name": "trained_model.pth",
+  "tf_logs_path": "data/tensor_board_logs/"
+}

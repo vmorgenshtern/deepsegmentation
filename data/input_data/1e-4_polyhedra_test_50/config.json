@@ -1,0 +1,95 @@
+{
+  "global": {
+    "Network": {
+      "num_epochs": 1,
+      "seed": 1,
+      "total_dataset_number": 2
+    },
+    "Training_Dataset_1": {
+      "augmentation_applied": null,
+      "batch_size": 1,
+      "name": "1e-4_polyhedra_train_500",
+      "path": "data/input_data/1e-4_polyhedra_train_500",
+      "seed": 1,
+      "size": 500
+    },
+    "Training_Dataset_2": {
+      "augmentation_applied": null,
+      "batch_size": 1,
+      "name": "1e-4_polyhedra_validate_50",
+      "path": "data/input_data/1e-4_polyhedra_validate_50",
+      "seed": 7,
+      "size": 50
+    },
+    "cfg_path": "data/network_data/1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool/1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool_config.json",
+    "display_stats_freq": 50,
+    "experiment_name": "1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool",
+    "input_data_path": "data/input_data/",
+    "network_output_path": "data/network_data/1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool",
+    "network_save_freq": 500,
+    "output_data_path": "data/output_data/1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool",
+    "tf_logs_path": "data/tensor_board_logs/1e-4_ResNet_Lr1e-4_epoch13_batchsize500_NVPD21_acceptance0.5_WR8_Adam_train500_validate50_nosphere_Preprocessed_ReLUAvgPool",
+    "trained_model_name": "trained_model.pth"
+  },
+  "simulator": {
+    "mode": "noisy",
+    "noise_params": {
+      "variance": 0.0001,
+      "mean": 0
+    },
+    "nr_points": {
+      "upper_bound": 50000,
+      "lower_bound": 5000
+    },
+    "global_scaling": {
+      "upper_bound": 1,
+      "lower_bound": 1
+    },
+    "vertex_scales": {
+      "C0": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      },
+      "C1": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      },
+      "C2": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      },
+      "C3": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      },
+      "C4": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      },
+      "C5": {
+        "upper_bound": 1,
+        "lower_bound": 1
+      }
+    },
+    "include_spheres": false,
+    "edge_rounding": {
+      "apply_probability": 0.5,
+      "fraction_upper_bound": 10000,
+      "fraction_lower_bound": 100
+    },
+    "roll_pitch_yaw_deg": {
+      "apply_probability": 1,
+      "upper_bound": 360,
+      "lower_bound": 0
+    },
+    "squash_xy": {
+      "squash_x_upper_bound": 1,
+      "squash_x_lower_bound": 0.5,
+      "squash_y_upper_bound": 1,
+      "squash_y_lower_bound": 0.5
+    }
+  },
+  "others": {
+    "seed": 105
+  }
+}
