@@ -125,8 +125,6 @@ dmypy.json
 
 #files
 *.html
-*.json
-*.pth
 *Thumbs.db
 *.lms37-22
 *.png
