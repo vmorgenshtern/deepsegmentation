@@ -125,12 +125,9 @@ dmypy.json
 .pyre/
 
 #files
-*.npy
 data/*.html
 Classic_RGS/*.html
 PolyhedronGenerator/*.html
-data/network_data/*.json
-data/network_data/*.pth
 *Thumbs.db
 *.png
 
