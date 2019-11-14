@@ -28,12 +28,13 @@
   * Make sure that the input path is correctly set.
   * After running the notebook, find the files in the specified output path.
 2. Deep Learning Pipeline:
-  * You can train a network using the notebook "Training". 
-  * By setting an experiment name, it is assured that results are separated from other configurations. 
-  * To overwrite an existing experiment, uncomment the 'delete' line
-  * To continue training an existing experiment, uncomment the 'create_retrain_experiment' line
-  * A training set, validation set and test set will automatically be created, if not available.
-  * After training is finished, you can test the network performance with the notebook "Predict" or "Evaluate" by choosing an experiment. The pipeline will store the results in data/output_data/
+  * You can evaluate existing models via the notebooks "Predict" or "Evaluate". The difference is, that Evaluate has access to the ground truth data and returns more information. 
+  * You can train a new or existing model using the notebook "Training". 
+     * By setting an experiment name, it is assured that results are separated from other configurations. 
+     * To overwrite an existing experiment, uncomment the 'delete' line.
+     * To continue training an existing experiment, uncomment the 'create_retrain_experiment' line. Make sure that the 'delete line' is commented.
+  * Datasets will automatically be created in these notebooks, if not available. Make sure that "generator_config.py" is as intended.
+  * All results are stored in data/output_data
   * After training is finished, you can call the notebook "Read_Training_Results" which will display results on the validation set and automatically generate an html version for archiving.
 3. Independent notebooks:
   * Notebook "PolyhedronGenerator": You can use this to try the polyhedron generator. Data will be stored in data/temp_data
