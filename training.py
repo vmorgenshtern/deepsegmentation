@@ -434,11 +434,11 @@ class Training:
                     difference_matrix = np.abs(reference_matrix - relation_matrix)
                     accuracy = 1 - np.count_nonzero(difference_matrix) / reference_matrix.size
 
-                    path = os.path.join(self.params['output_data_path'], 'relation_matrices_test_' + str(self.epoch) + '_' +
+                    path = os.path.join(self.params['output_data_path'], 'relation_matrices_validate_' + str(self.epoch) + '_' +
                                          str(file_counter) + '.png')
                     while os.path.exists(path):
                         file_counter += 1
-                        path = os.path.join(self.params['output_data_path'], 'relation_matrices_test_' + str(self.epoch) + '_' +
+                        path = os.path.join(self.params['output_data_path'], 'relation_matrices_validate_' + str(self.epoch) + '_' +
                                              str(file_counter) + '.png')
 
                     print("Relation matrix {}, Reference matrix {}, difference matrix {}".format(str(relation_matrix.shape), str(reference_matrix.shape), str(difference_matrix.shape)))
@@ -469,6 +469,7 @@ class Training:
 
                     if visualize:
                         plt.show()
+                    plt.close()
 
                     if not os.path.exists(os.path.join(self.params["output_data_path"], 'Validate_Statistics.csv')):
                         with open(os.path.join(self.params["output_data_path"], 'Validate_Statistics.csv'),
@@ -523,6 +524,7 @@ class Training:
                 plt.savefig(os.path.join(self.params['output_data_path'], 'threshold_epoch_' + str(self.epoch)))
             if visualize:
                 plt.show()
+            plt.close()
 
         'Save model after every validation step'
         # Note: Prefix default filename with step number Eg: epoch_5_trained_model.pth

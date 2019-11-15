@@ -38,6 +38,7 @@
   "network_output_path": "data/network_data/1e-3_paper",
   "network_save_freq": 500,
   "output_data_path": "data/output_data/1e-3_paper",
+  "predictions_path": "data/output_data/1e-3_paper/Predictions",
   "preprocessed_patches_path": "data/input_data/1e-3_polyhedra_train_500/Preprocessed_patches",
   "test_path": "data/output_data/1e-3_paper/Test_Results",
   "tf_logs_path": "data/tensor_board_logs/1e-3_paper",
