@@ -4,6 +4,15 @@
 * an implementation of a classical algorithm for segmenting surfaces in point clouds, called Region Growing Segmentation (RGS). It is based on [RGS](http://www.pointclouds.org/documentation/tutorials/region_growing_segmentation.php)
 * a deep learning pipeline for segmenting faces in 3D point clouds
 
+## Installation
+Create a virtual environment "venv_deepseg" with all required dependencies by typing following:
+* clone this repository
+* Use a shell to execute following commands:
+  * cd deepsegmentation
+  * conda create -y -n venv_deepseg python=3.6.8 anaconda
+  * conda activate venv_deepseg
+  * sh requirements.txt
+
 ## Getting familiar with the folder structure
 * Root folder: 
   * Contains all available jupyter notebooks
@@ -33,7 +42,7 @@
      * By setting an experiment name, it is assured that results are separated from other configurations. 
      * To overwrite an existing experiment, uncomment the 'delete' line.
      * To continue training an existing experiment, uncomment the 'create_retrain_experiment' line. Make sure that the 'delete line' is commented.
-  * Datasets will automatically be created in these notebooks, if not available. Make sure that "generator_config.py" is as intended.
+  * Datasets will automatically be created in these notebooks, if not available. Make sure that "generator_config.py" is set as intended.
   * All results are stored in data/output_data
   * After training is finished, you can call the notebook "Read_Training_Results" which will display results on the validation set and automatically generate an html version for archiving.
 3. Independent notebooks:
@@ -41,13 +50,16 @@
   * Notebook "Voxelization": You can observe how the patches in a point cloud look and how a patch looks compared to its voxelized version. Data will be stored in data/temp_data
   
 ## Requirements
+The following requirements are all satisfied via the installation procedure given above.
 * Python 3.6.8
-* torch 1.1.0
+* Pytorch 1.1.0
 * numpy 1.15.4
 * numba 0.43.1
 * plotly 3.10.0
 * matplotlib 3.0.2
-* sklearn 0.0
+* scikit-learn 0.21.2
 * scipy 1.1.0
 * tensorboardx 1.7
 * jupyter 1.0.0
+* python-constraint 1.4.0
+* cvxpy 1.0.24
