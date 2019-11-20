@@ -5,9 +5,9 @@
 * a deep learning pipeline for segmenting faces in 3D point clouds
 
 ## Installation
-Create a virtual environment "venv_deepseg" with all required dependencies by typing following:
-* clone this repository
-* Use a shell to execute following commands:
+Create a virtual environment "venv_deepseg" with all required dependencies as follows:
+1. Clone this repository
+2. Use a shell to execute following commands:
   * cd deepsegmentation
   * conda create -y -n venv_deepseg python=3.6.8 anaconda
   * conda activate venv_deepseg
