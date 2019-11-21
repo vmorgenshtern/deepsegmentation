@@ -9,7 +9,7 @@ Create a virtual environment "venv_deepseg" with all required dependencies as fo
 * Clone this repository
 * Use a shell to execute following commands:
   * cd deepsegmentation
-  * conda create -y -n venv_deepseg python=3.6.8 anaconda
+  * conda create --name venv_deepseg --file requirements_conda.txt
   * conda activate venv_deepseg
   * sh requirements.txt
 
