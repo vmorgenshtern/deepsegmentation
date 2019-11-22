@@ -9,7 +9,7 @@ Create a virtual environment "venv_deepseg" with all required dependencies as fo
 * Clone this repository
 * Use a shell to execute following commands:
   * cd deepsegmentation
-  * conda create --name venv_deepseg --file requirements_conda.txt
+  * conda create -y -n venv_deepseg python=3.6.8 anaconda
   * conda activate venv_deepseg
   * sh requirements.txt
 
@@ -32,11 +32,11 @@ Create a virtual environment "venv_deepseg" with all required dependencies as fo
 * utils: Contains utility program code
 
 ## Getting started
-1. Region Growing Segmentation:
+* Region Growing Segmentation:
   * Open the Jupyter notebook "Classic_RegionGrowingSegmentation". 
   * Make sure that the input path is correctly set.
   * After running the notebook, find the files in the specified output path.
-2. Deep Learning Pipeline:
+* Deep Learning Pipeline:
   * You can evaluate existing models via the notebooks "Predict" or "Evaluate". The difference is, that Evaluate has access to the ground truth data and returns more information. 
   * You can train a new or existing model using the notebook "Training". 
      * By setting an experiment name, it is assured that results are separated from other configurations. 
@@ -45,7 +45,7 @@ Create a virtual environment "venv_deepseg" with all required dependencies as fo
   * Datasets will automatically be created in these notebooks, if not available. Make sure that "generator_config.py" is set as intended.
   * All results are stored in data/output_data
   * After training is finished, you can call the notebook "Read_Training_Results" which will display results on the validation set and automatically generate an html version for archiving.
-3. Independent notebooks:
+* Independent notebooks:
   * Notebook "PolyhedronGenerator": You can use this to try the polyhedron generator. Data will be stored in data/temp_data
   * Notebook "Voxelization": You can observe how the patches in a point cloud look and how a patch looks compared to its voxelized version. Data will be stored in data/temp_data
   
@@ -58,7 +58,8 @@ The following requirements are all satisfied via the installation procedure give
 * plotly 3.10.0
 * matplotlib 3.0.2
 * scikit-learn 0.21.2
-* scipy 1.1.0
+* scipy 1.3.0
+* tensorboard 1.14.0
 * tensorboardx 1.7
 * jupyter 1.0.0
 * python-constraint 1.4.0
